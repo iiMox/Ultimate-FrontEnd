@@ -25,3 +25,32 @@
                         | You recieved money from...
             .noti-footer.text-center: a(href="#") View All Notifications
     i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+    .dropdown.usermenu-container
+        .username#usermenu(data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+            img.avatar.rounded-circle(src="images/avatar.png", alt="User Avatar")
+            span.user Ni Mou
+            i.fa.fa-angle-down.fa-lg
+        .dropdown-menu.dropdown-menu-right(aria-labelledy="usermenu")
+            .user-info
+                h3 Ni Mou
+                p Premuim Member
+            hr 
+            ul.activities-list.list-unstyled
+                li Added Comment on Posts "..."
+                li Created Post on Category "..."
+                li Created Chart on Chart Page
+                li Added Comment on Posts "..."
+            hr
+            .row.user-links
+                .col
+                    .link-box 
+                        i.fa.fa-cog.fa-lg.fa-fw
+                        span Settings
+                .col
+                    .link-box 
+                        i.fa.fa-user.fa-lg.fa-fw
+                        span My Profile
+                .col
+                    .link-box 
+                        i.fa.fa-power-off.fa-lg.fa-fw
+                        span Logout
