@@ -1,2 +1,26 @@
 .header 
     i.fa.fa-exchange-alt.fa-lg.toggle-sidebar
+    .dropdown.notifications-container
+        i.fas.fa-bell.fa-lg.toggle-notifications(id="notifications", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+        .dropdown-menu(aria-labelledy="notifications")
+            .noti-head
+                | Notifications
+                span 50
+            .noti-content 
+                ul.list-unstyled
+                    li
+                        i.fa.fa-envelope.fa-lg
+                        | You have mail unread
+                    li
+                        i.fa.fa-coins.fa-lg
+                        | You recieved money from...
+                    li
+                        i.fa.fa-thumbs-up.fa-lg
+                        | You have a like
+                    li
+                        i.fa.fa-envelope.fa-lg
+                        | You have mail unread
+                    li
+                        i.fa.fa-coins.fa-lg
+                        | You recieved money from...
+            .noti-footer.text-center: a(href="#") View All Notifications
