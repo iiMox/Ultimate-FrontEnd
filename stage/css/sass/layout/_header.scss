@@ -6,17 +6,18 @@
     cursor: pointer;
   }
 
+  .header-icon {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    color: #555;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
   .notifications-container {
     display: inline-block;
     margin-left: 20px;
-
-    .toggle-notifications {
-      padding: 10px;
-      background-color: #f9f9f9;
-      border-radius: 50%;
-      color: #555;
-      cursor: pointer;
-    }
 
     .dropdown-menu {
       min-width: 600px;
@@ -46,13 +47,15 @@
       }
 
       .noti-content {
-        padding: 20px;
-
         ul {
           margin: 0;
 
           li {
-            padding: 10px;
+            padding: 20px 30px;
+
+            &:not(:last-of-type) {
+              border-bottom: 1px solid #eee;
+            }
 
             i {
               background-color: #eee;
@@ -80,5 +83,8 @@
         }
       }
     }
+  }
+
+  .toggle-fullscreen {
   }
 }

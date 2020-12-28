@@ -1,7 +1,7 @@
 .header 
     i.fa.fa-exchange-alt.fa-lg.toggle-sidebar
     .dropdown.notifications-container
-        i.fas.fa-bell.fa-lg.toggle-notifications(id="notifications", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+        i.fas.fa-bell.fa-lg.header-icon.toggle-notifications(id="notifications", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
         .dropdown-menu(aria-labelledy="notifications")
             .noti-head
                 | Notifications
@@ -24,3 +24,4 @@
                         i.fa.fa-coins.fa-lg
                         | You recieved money from...
             .noti-footer.text-center: a(href="#") View All Notifications
+    i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
