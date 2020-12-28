@@ -3,6 +3,18 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+
+  &.open {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  &.roboto {
+    font-family: "Roboto", sans-serif;
+  }
+
+  &.oswald {
+    font-family: "Oswald", sans-serif;
+  }
 }
 
 .page {
@@ -17,6 +29,15 @@ body {
 
     &.no-sidebar {
       width: 100%;
+    }
+
+    .page-head {
+      margin-top: 20px;
+      padding: 20px;
+      .page-title {
+        font-weight: bold;
+        color: #27ae60;
+      }
     }
   }
 }

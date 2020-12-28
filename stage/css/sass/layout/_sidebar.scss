@@ -62,6 +62,10 @@
           border: 2px solid #fff;
           transform: translateY(-50%);
         }
+
+        &.active:before {
+          border-color: #27ae60;
+        }
       }
 
       .child-links {
@@ -80,6 +84,7 @@
 
         a {
           position: relative;
+
           &:hover:before {
             content: "";
             position: absolute;

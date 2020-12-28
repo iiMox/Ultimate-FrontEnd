@@ -37,6 +37,46 @@ $(function () {
 
     })
 
+    // Toggle Settings
+
+    $(".toggle-settings").on("click", function () {
+
+        $(this).find("i").toggleClass("fa-spin");
+
+        $(this).parent().toggleClass("hide-settings");
+
+    })
+
+    // Switch Color Theme 
+
+    var themesClasses = [];
+
+    $(".color-options li").each(function () {
+        themesClasses.push($(this).data('theme'));
+    })
+
+    $(".color-options li").on("click", function () {
+
+        $(this).addClass("active").siblings().removeClass("active");
+
+        $("body").removeClass(themesClasses.join(" ")).addClass($(this).data('theme'));
+
+    });
+
+    // Switch Font
+
+    var fontsClasses = [];
+
+    $(".font-options select option").each(function () {
+        fontsClasses.push($(this).val());
+    })
+
+    $(".font-options select").on("change", function () {
+
+        $("body").removeClass(fontsClasses.join(" ")).addClass($(this).find("option:selected").val());
+
+    });
+
 })
 
 var elem = document.documentElement;

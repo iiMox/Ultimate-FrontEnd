@@ -1,0 +1,26 @@
+$themes: (
+  green-theme: (
+    color: #27ae60,
+  ),
+  blue-theme: (
+    color: #2980b9,
+  ),
+  red-theme: (
+    color: #c0362b,
+  ),
+  purple-theme: (
+    color: #8e44ad,
+  ),
+);
+
+@each $theme, $map in $themes {
+  .#{$theme} {
+    $currentColor: map-get($map, color);
+    .page .page-head .page-title {
+      color: $currentColor;
+    }
+    .page .sidebar .links-area > li > a.active:before {
+      border-color: $currentColor;
+    }
+  }
+}
